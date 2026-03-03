@@ -1,0 +1,20 @@
+{
+  "projectId": "261867874997773057",
+  "designSystem": {
+    "aesthetic": "minimal",
+    "palette": "SaaS / Productivity",
+    "heading_font": "Space Grotesk",
+    "body_font": "DM Sans",
+    "icon_library": "none"
+  },
+  "screens": [
+    {
+      "screenId": "8db3e81b5330407a9867805569a2211b",
+      "title": "Minimal Hello World Landing Page",
+      "htmlFile": "stitch/hello-world.html",
+      "pngFile": "stitch/hello-world.png",
+      "device": "DESKTOP"
+    }
+  ],
+  "generatedAt": "2026-03-03T09:35:00Z"
+}

@@ -1,0 +1,19 @@
+:root {
+  /* Colors */
+  --color-primary: #0066ff;
+  --color-background-light: #ffffff;
+  --color-background-dark: #0f1723;
+  --color-text-main: #101418;
+  --color-text-secondary: #5e718d;
+  --color-border-light: #f0f2f5;
+  
+  /* Typography */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  
+  /* Border Radius */
+  --radius-default: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+}

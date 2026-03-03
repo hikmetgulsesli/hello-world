@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hello World - SaaS Landing Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0066ff",
+                        "background-light": "#ffffff",
+                        "background-dark": "#0f1723",
+                        "text-main": "#101418",
+                        "text-secondary": "#5e718d",
+                        "border-light": "#f0f2f5",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["DM Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light text-text-main font-body antialiased flex flex-col min-h-screen">
+<!-- Top Navigation -->
+<header class="w-full border-b border-border-light bg-white/80 backdrop-blur-md sticky top-0 z-50">
+<div class="max-w-[960px] mx-auto px-6 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary flex items-center justify-center bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined text-2xl">rocket_launch</span>
+</div>
+<h2 class="text-text-main text-xl font-display font-bold tracking-tight">Hello SaaS</h2>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<nav class="flex gap-6">
+<a class="text-text-main text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-text-secondary text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+<a class="text-text-secondary text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<button class="bg-primary hover:bg-primary/90 text-white text-sm font-bold py-2.5 px-5 rounded-lg transition-all shadow-lg shadow-primary/20">
+                    Get Started
+                </button>
+</div>
+<button class="md:hidden text-text-main p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow flex flex-col items-center justify-center">
+<!-- Hero Section -->
+<div class="w-full max-w-[960px] mx-auto px-6 py-20 md:py-32 flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 border border-primary/10 text-primary text-xs font-bold mb-8 uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                Coming Soon
+            </div>
+<h1 class="font-display font-bold text-6xl md:text-8xl tracking-tighter text-text-main mb-6 leading-[0.9]">
+                Hello <span class="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">World</span>
+</h1>
+<p class="text-text-secondary text-lg md:text-xl font-normal max-w-2xl leading-relaxed mb-10">
+                Simplicity is the ultimate sophistication. Experience the clean, spacious design of our upcoming platform designed to streamline your workflow without the clutter.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 w-full max-w-md">
+<div class="relative flex-grow">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-text-secondary">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<input class="w-full pl-10 pr-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-sm transition-all" placeholder="Enter your email address" type="email"/>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-lg shadow-lg shadow-primary/25 transition-all whitespace-nowrap">
+                    Notify Me
+                </button>
+</div>
+<p class="mt-4 text-xs text-text-secondary">No spam. Unsubscribe anytime.</p>
+</div>
+<!-- Visual / Image Section -->
+<div class="w-full max-w-[960px] mx-auto px-6 mb-24">
+<div class="relative rounded-2xl overflow-hidden border border-border-light shadow-2xl shadow-gray-200/50 bg-white aspect-video md:aspect-[21/9] group">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-blue-100/20"></div>
+<!-- Abstract minimal dashboard representation -->
+<div class="absolute inset-4 sm:inset-8 md:inset-12 bg-white rounded-xl border border-border-light shadow-sm flex flex-col overflow-hidden">
+<div class="h-10 border-b border-border-light flex items-center px-4 gap-2 bg-gray-50/50">
+<div class="w-2.5 h-2.5 rounded-full bg-red-400/80"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-amber-400/80"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-green-400/80"></div>
+</div>
+<div class="flex-1 p-6 sm:p-8 flex gap-6">
+<div class="w-1/4 hidden sm:flex flex-col gap-3">
+<div class="h-4 w-3/4 bg-gray-100 rounded"></div>
+<div class="h-4 w-full bg-gray-50 rounded"></div>
+<div class="h-4 w-5/6 bg-gray-50 rounded"></div>
+<div class="h-4 w-4/5 bg-gray-50 rounded"></div>
+</div>
+<div class="flex-1 flex flex-col gap-4">
+<div class="h-8 w-1/2 bg-gray-100 rounded mb-2"></div>
+<div class="grid grid-cols-2 gap-4">
+<div class="h-24 bg-primary/5 rounded-lg border border-primary/10"></div>
+<div class="h-24 bg-gray-50 rounded-lg border border-gray-100"></div>
+</div>
+<div class="h-4 w-full bg-gray-50 rounded mt-2"></div>
+<div class="h-4 w-5/6 bg-gray-50 rounded"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Features Grid -->
+<div class="w-full bg-gray-50/50 border-y border-border-light">
+<div class="max-w-[960px] mx-auto px-6 py-20">
+<div class="text-center mb-12">
+<h3 class="font-display font-bold text-3xl text-text-main mb-3">Why wait for us?</h3>
+<p class="text-text-secondary max-w-lg mx-auto">We are crafting an experience that prioritizes your focus.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Feature 1 -->
+<div class="bg-white p-6 rounded-xl border border-border-light shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-blue-50 text-primary rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<h4 class="font-display font-bold text-lg text-text-main mb-2">Clean Design</h4>
+<p class="text-text-secondary text-sm leading-relaxed">A focused user interface without clutter, allowing you to concentrate on what matters most.</p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-white p-6 rounded-xl border border-border-light shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-blue-50 text-primary rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<h4 class="font-display font-bold text-lg text-text-main mb-2">Fast Performance</h4>
+<p class="text-text-secondary text-sm leading-relaxed">Optimized for speed and efficiency, ensuring zero lag in your daily operations.</p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-white p-6 rounded-xl border border-border-light shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-blue-50 text-primary rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<h4 class="font-display font-bold text-lg text-text-main mb-2">Secure &amp; Reliable</h4>
+<p class="text-text-secondary text-sm leading-relaxed">Enterprise-grade security standards built into the core of the platform.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-white border-t border-border-light">
+<div class="max-w-[960px] mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col items-center md:items-start">
+<span class="font-display font-bold text-lg tracking-tight text-text-main">Hello SaaS</span>
+<p class="text-text-secondary text-sm mt-1">© 2023 Hello SaaS Inc.</p>
+</div>
+<div class="flex gap-6 text-sm">
+<a class="text-text-secondary hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-text-secondary hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex gap-4">
+<a class="text-text-secondary hover:text-primary transition-colors bg-gray-50 hover:bg-blue-50 p-2 rounded-full" href="#">
+<span class="material-symbols-outlined text-[20px]">flutter_dash</span> <!-- Using generic bird icon for Twitter/X -->
+</a>
+<a class="text-text-secondary hover:text-primary transition-colors bg-gray-50 hover:bg-blue-50 p-2 rounded-full" href="#">
+<span class="material-symbols-outlined text-[20px]">work</span> <!-- Using generic work icon for LinkedIn -->
+</a>
+<a class="text-text-secondary hover:text-primary transition-colors bg-gray-50 hover:bg-blue-50 p-2 rounded-full" href="#">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span> <!-- Using generic camera icon for Instagram -->
+</a>
+</div>
+</div>
+</footer>
+</body></html>
